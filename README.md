@@ -44,6 +44,10 @@ Multiplying a string by an integer value *x* will be the same as adding that str
 ```rust
 "abc" * 2 = "abcabc";
 ```
+Attempting to multiply a string by any other data type will result in an error
+
+Dividing  *string1* by  *string2* will result in an integer that tells how many times *string1* goes into *string2*
+```
 
 ## Variables   
 ### Implicit
