@@ -21,6 +21,17 @@ let int8 x = 10;
 implies that **x will be only 8 bytes long**. Attempting to store a number that requires **more than 8 bytes** will **result in an error**.
 ### Floating point
 **floating point number rules are the exact same as integer rules**, except floating points store a decimal along with a number. Note, **attempting to IMPLICITLY create a float that can be evaluated to an int will not result in an implicit float, but an int. For example (5.3 + 6.7) = integer 12, not float 12. 0.000 also equals integer 0, not floating point 0. This is true for ADDITION and SUBTRACTION at the moment. I am still figuring out how to do this with multiplication and divison.**
+### Strings
+Anything that goes inside " " qualifies as a string
+Strings are defined with the string keyword
+```rust
+let string x = "1"; or let x = "1";
+```
+If you explicity declare a string and pass in a non-string value, you will recieve an error. Convert non-strings to strings with the str() function
+```rust
+let string x = str(1);
+``` 
+
 ## Variables   
 ### Implicit
 if the type is not specified(int, float, etc.), the compiler will define the type for the variable. 
