@@ -44,10 +44,20 @@ Multiplying a string by an integer value *x* will be the same as adding that str
 ```rust
 "abc" * 2 = "abcabc";
 ```
-Attempting to multiply a string by any other data type will result in an error
 
 Dividing  *string1* by  *string2* will result in an integer that tells how many times *string1* goes into *string2*
+```rust
+"aabbccc" / "a" = 2;
+"aabbccc" / "c" = 3;
 ```
+*string1* Mod(%) *string2* returns a copy of *string2* with all instances of *string1* removed
+
+```rust
+"aabbcc" % "a" = "bbcc";
+"aabc" % "bc" = "aa";
+```
+
+**Attempting to perform any operation on a string that does not conform to the above rules WILL result in an error**
 
 ## Variables   
 ### Implicit
