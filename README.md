@@ -31,6 +31,19 @@ If you explicity declare a string and pass in a non-string value, you will recie
 ```rust
 let string x = str(1);
 ``` 
+Adding two strings will result in a new string that contains both strings:
+```rust
+"abc" + "def" = "abcdef";
+```
+Subtracting a string from a string will remove ONE instance of that string from the string:
+```rust
+"abc" - "bc" = "a";
+"abcbc" - "bc" = "a";
+```
+Multiplying a string by an integer value *x* will be the same as adding that string to itself *x* times:
+```rust
+"abc" * 2 = "abcabc";
+```
 
 ## Variables   
 ### Implicit
