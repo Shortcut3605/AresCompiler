@@ -56,8 +56,13 @@ Dividing  *string1* by  *string2* will result in an integer that tells how many 
 "aabbcc" % "a" = "bbcc";
 "aabc" % "bc" = "aa";
 ```
+### Array
+An array is a contigous **CONSTANT** segment of memory allocated to a variable
 
-**Attempting to perform any operation on a string that does not conform to the above rules WILL result in an error**
+
+**Attempting to perform any operation on a data type that does not conform to the above rules WILL result in an error**
+
+
 
 ## Variables   
 ### Implicit
