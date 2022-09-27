@@ -4,13 +4,11 @@ Compiler for my language ares
 ## Basic math expressions
 Standard PEMDAS rules apply
 Modulus(%) operator takes same precedence as Multiply(*) and Divide(/)
-## Variables
-- Data types
-    ### Int
-         an int is a **resizable** variable that can fit any number. Note: performing operations on massive integers may be impossible
-    ### Int<value>
-        explicit declaration of int <value> bytes long
-- Implicit
+
+## Data types
+
+## Variables   
+### Implicit
 if the type is not specified(int, float, etc.), the compiler will define the type for the variable. 
-- Explicit
+### Explicit
 if the type is defined, the compiler will go along with it
