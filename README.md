@@ -1,4 +1,4 @@
-# Ares Compiler
+# GAC: General Ares Compiler
 Compiler for my language ares
 # Grammar
 ## Basic math expressions
