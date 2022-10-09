@@ -21,10 +21,11 @@ const char* token_type_to_str(int type){
         case TT_LPAREN: return "LPAREN"; break;
         case TT_RPAREN: return "RPAREN"; break;
         case TT_EOF: return "EOF"; break;
+        case TT_POW: return "POW"; break;
     }
 }
 
 void token_print(Token* tok){
-    printf("<Token type = %s, value = %s>", token_type_to_str(type), (tok->value == NULL) ? "None" : tok->value);
+    printf("<Token type = %s, value = %s>", token_type_to_str(tok->type), (tok->value == NULL) ? "None" : tok->value);
     
 }
