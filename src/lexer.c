@@ -29,9 +29,10 @@ List* lexer_make_tokens(Lexer* lexer){
             case '-': list_push(list, token_create(TT_MINUS, NULL)); break;
             case '*': list_push(list, token_create(TT_MUL, NULL)); break;
             case '/': list_push(list, token_create(TT_DIV, NULL)); break;
-            case '\0': break;
+            case '^': list_push(list, token_create(TT_POW, NULL)); break;
         }
         lexer_advance(lexer);
     }
+    list_push(list, token_create(TT_EOF, NULL));
     return list;
 }
