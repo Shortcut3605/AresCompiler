@@ -1,13 +1,20 @@
 #ifndef LEXER_H
 #define LEXER_H
 #include "token.h"
+#include "list.h"
 typedef struct Lexer{
     char* src;
-    size_t src_len;
+    int src_len;
     char c;
-    unsigned int i;
+    int i;
 } Lexer;
 
-Lexer* init_lexer()
+Lexer* lexer_create(char* src);
+
+void lexer_advance(Lexer* lexer);
+
+List* lexer_make_tokens(Lexer* lexer);
+
+
 
 #endif

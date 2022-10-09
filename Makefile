@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -c -std=c99 -g -lm
 LDFLAGS = -g
-SRC =  $(wildcard *.c)
-HDR = $(wildcard *.h)
+SRC =  $(wildcard src/*.c)
+HDR = $(wildcard src/include/*.h)
 OBJ = ${SRC:.c=.o}
 EXEC = ares
 
