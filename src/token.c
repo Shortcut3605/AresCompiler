@@ -4,7 +4,7 @@
 
 
 Token* token_create(int type, char* value){
-    Token* tok = malloc(sizeof(struct Token));
+    Token* tok = malloc(sizeof(Token));
     tok->type = type;
     tok->value = value;
     return tok;
@@ -22,6 +22,7 @@ const char* token_type_to_str(int type){
         case TT_RPAREN: return "RPAREN"; break;
         case TT_EOF: return "EOF"; break;
         case TT_POW: return "POW"; break;
+        default: printf("UNKOWN TYPE %d", type); break;
     }
 }
 

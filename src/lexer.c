@@ -26,6 +26,9 @@ List* lexer_make_tokens(Lexer* lexer){
     while(lexer->c != -1){
         switch(lexer->c){
             case '+': list_push(list, token_create(TT_PLUS, NULL)); break;
+            case '-': list_push(list, token_create(TT_MINUS, NULL)); break;
+            case '*': list_push(list, token_create(TT_MUL, NULL)); break;
+            case '/': list_push(list, token_create(TT_DIV, NULL)); break;
             case '\0': break;
         }
         lexer_advance(lexer);
